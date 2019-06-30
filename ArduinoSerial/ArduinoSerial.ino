@@ -10,9 +10,9 @@ void loop() {
     while (Serial.available() > 0) {
       Serial.read();
     }
-    Serial.println("test");
+    Serial.println("Command received...");
     digitalWrite(12, HIGH);
-    delay(30000);
+    delay(500);
     digitalWrite(12, LOW);
     delay(200);
   }
